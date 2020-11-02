@@ -24,11 +24,11 @@ operator = prompt("Enter operator: +, -, /, *");
 secondInput = parseInt(prompt("Enter second number"));
 
 if(operator === "+"){
-    console.log(add(firstInput,secondInput));
+    console.log( `${firstInput} + ${secondInput} = ${(add(firstInput,secondInput))}`);
 } else if(operator === "-"){
-    console.log(subtract(firstInput,secondInput));
+    console.log(`${firstInput} - ${secondInput} = ${(subtract(firstInput,secondInput))}`);
 } else if(operator === "*"){
-    console.log(multiply(firstInput,secondInput));
+    console.log(`${firstInput} * ${secondInput} = ${(multiply(firstInput,secondInput))}`);
 } else{
-    console.log(divide(firstInput,secondInput));
+    console.log(`${firstInput} / ${secondInput} = ${(divide(firstInput,secondInput))}`);
 }
