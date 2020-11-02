@@ -1,16 +1,16 @@
 // Challenge Hard
- function add(X,Y){
+ function add(x,y){
      return x+y;
  }
 
- function subtract(X,Y){
+ function subtract(x,y){
      return x-y;
  }
 
- function multiply(X,Y){
+ function multiply(x,y){
      return x*y;
  }
 
- function divide(X,Y){
+ function divide(x,y){
      return x/y;
 }
