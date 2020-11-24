@@ -52,7 +52,54 @@ Programmer.prototype.listLanguages = function() {
 const programmer = new Programmer('Tim Smith', 'Programmer', 2, ['JS']);
 
 programmer.completeTask();
-programmer.acceptNewTask();
 programmer.learnLanguage('html');
 programmer.listLanguages();
 programmer.offerNewTask();
+console.log(programmer);
+
+//ES6 Way Class
+// class Person{
+//   constructor(name,job,age){
+//     this.name = name;
+//     this.job = job;
+//     this.age = age;
+//   }
+//   fetchJob = function() {
+
+//     console.log(`${this.name} is a ${this.job}`);
+//   }
+
+//   exercise = function() {
+
+//     console.log(`${this.name} thinks Wii-Fit class is Fun!!`);
+//   }
+// }
+
+// class Programmer extends Person {
+//   constructor(name,job,age,languages) {
+
+//     super(name,job,age);
+//     this.languages = languages;
+//     this.busy = true;
+
+//   }
+
+//   completeTask = function() {
+//     this.busy = false;
+//   };
+
+//   acceptNewTask = function() {
+//     this.busy = true;
+//  };
+
+
+//   offerNewTask = function() {
+//    if(this.busy) {
+//       console.log(`${this.name} can't accept any new tasks right now.`)
+//     } else {
+//       console.log(`${this.name} would love to take on a new responsibility.`)
+//     }
+//   };
+
+
+// }

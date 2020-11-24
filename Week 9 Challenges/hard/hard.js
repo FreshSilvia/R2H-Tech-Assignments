@@ -26,3 +26,20 @@ console.log(person.getName());
 console.log(person.getAddress());
 console.log(person.getEmail());
 console.log(Person());
+
+//Another way to do the assignment
+
+// function security(name,ssn){
+//         var pii = {
+//             name: this.name,
+//             ssn: this.ssn,
+//         }
+
+//         function getInfo(){
+//             return name
+//         }
+
+//         getInfo()
+//     }
+
+// security("Jordan", 46945987)
