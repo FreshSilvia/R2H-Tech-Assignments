@@ -53,7 +53,7 @@ const budgetController = (() => {
     
     
     return {
-        addItem: function(type, des, val) {
+        addItem(type, des, val) {
             let newItem;
             let ID;
             
@@ -71,7 +71,7 @@ const budgetController = (() => {
             // Create new item based on 'inc' or 'exp' type
             if (type === 'exp') {
                 newItem = new Expense(ID, des, val);
-            } else if (type === 'inc') {
+            } else if (type === "inc") {
                 newItem = new Income(ID, des, val);
             }
             
@@ -117,7 +117,7 @@ const budgetController = (() => {
             if (data.budget < 0) {
                 alert("You are over budget");
             };
-            
+
             // calculate the percentage of income that we spent
             if (data.totals.inc > 0) {
                 data.percentage = Math.round((data.totals.exp / data.totals.inc) * 100);
