@@ -1,0 +1,13 @@
+{
+  "name": "@jordan/easy",
+  "version": "1.1.0",
+  "description": "easy challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Jordan",
+  "license": "MIT",
+  "repository": "https://github.com/FreshSilvia/R2H-Tech-Assignments",
+  "dependencies": {}
+}
